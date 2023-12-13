@@ -1,7 +1,7 @@
 import './App.css';
 import Card from './components/Card';
 import styled from 'styled-components';
-import Colors from './data/var';
+import { Colors } from './data/var';
 
 const Container = styled.div`
   width: 100vw;

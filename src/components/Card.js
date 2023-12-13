@@ -1,21 +1,32 @@
 import styled from 'styled-components';
-import Colors from '../data/var';
+import { Colors } from '../data/var';
+import { CommonFlex } from '../data/var';
+import icon from '../assets/images/icon-star.svg';
 
 const Div = styled.div`
-    height: 50%;
-    width: 150px;
-    border-radius: 9px;
-    background-color: #ffffff;
+  height: 568px;
+  width: 90%;
+  max-width: 602px;
+  padding: 0 40px;
+  border-radius: 9px;
+  background-color: #ffffff;
 `;
 
-const H1 = styled.h1`
-    color: ${Colors.darkPurple};
+const Header = styled.header`
+  width: min-content;
+  ${CommonFlex}
+  gap: 20px;
 `;
+
+const Title = styled.h1`
+  font-size: 3.2em;
+  color: ${Colors.darkPurple};
+`;
+
+const Img = styled.img``;
+
 
 /*
-FAQs
-
-  What is Frontend Mentor, and how will it help me?
 
   Frontend Mentor offers realistic coding challenges to help developers improve their 
   frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
@@ -41,7 +52,11 @@ FAQs
 function Card() {
   return (
     <Div>
-      <H1>FAQs</H1>
+      <Header>
+        <Img src={icon}/>
+        <Title>FAQs</Title>
+      </Header>
+      
     </Div>
   );
 }
