@@ -10,6 +10,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Run project](#run-project)
 - [Author](#author)
 
 ## Overview
@@ -28,7 +29,7 @@ Users should be able to:
 ![Image preview](./screenshot.jpg)
 
 ### Links
-- Live Site URL: [Live site url](https://your-live-site-url.com](https://faq-accordion-victor.netlify.app/)
+- Live Site URL: [Live site url](https://faq-accordion-victor.netlify.app/)
 
 ## My Process
 
