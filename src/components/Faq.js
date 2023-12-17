@@ -9,7 +9,7 @@ const minusImg = <img src={minus} alt="Minus Icon"/>;
 
 const config = {
   animate: true,
-  openOnload: 1,
+  openOnload: 0,
   expandIcon: plusImg,
   collapseIcon: minusImg,
 };
