@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import { Colors } from '../data/var';
-import { CommonFlex } from '../data/var';
+import { CommonFlex, Colors } from '../data/var';
 import icon from '../assets/images/icon-star.svg';
+import FaqComponent from './Faq';
 
 const Div = styled.div`
-  height: 568px;
   width: 90%;
   max-width: 602px;
-  padding: 0 40px;
+  padding: 0 30px 45px 30px;
   border-radius: 9px;
   background-color: #ffffff;
+  z-index: 999;
 `;
 
 const Header = styled.header`
@@ -20,34 +20,15 @@ const Header = styled.header`
 
 const Title = styled.h1`
   font-size: 3.2em;
+  font-weight: 700;
   color: ${Colors.darkPurple};
+
+  @media (max-width: 480px) {
+    font-size: 2.2em;
+  }
 `;
 
 const Img = styled.img``;
-
-
-/*
-
-  Frontend Mentor offers realistic coding challenges to help developers improve their 
-  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-  all levels and ideal for portfolio building.
-
-  Is Frontend Mentor free?
-
-  Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-  option providing access to a range of projects suitable for all skill levels.
-
-  Can I use Frontend Mentor projects in my portfolio?
-
-  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-  way to showcase your skills to potential employers!
-
-  How can I get help if I'm stuck on a Frontend Mentor challenge?
-  
-  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-  channel where you can ask questions and seek support from other community members.
-
-*/
 
 function Card() {
   return (
@@ -56,6 +37,8 @@ function Card() {
         <Img src={icon}/>
         <Title>FAQs</Title>
       </Header>
+
+      <FaqComponent/>
       
     </Div>
   );

@@ -1,0 +1,10 @@
+.faq-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px !important;
+}
+
+.icon-wrapper, .styles_icon-wrapper__2cftw {
+    transform: unset !important;
+  }

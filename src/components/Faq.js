@@ -1,35 +1,26 @@
-import styled from 'styled-components';
-import { Colors } from '../data/var';
-import { CommonFlex } from '../data/var';
+import React from "react";
+import Faq from "react-faq-component";
+import Faqs from "../data/questions";
 import minus from '../assets/images/icon-minus.svg';
 import plus from '../assets/images/icon-plus.svg';
 
-const Img = styled.img``;
-  
-const FaqContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-`; 
+const plusImg = <img src={plus} alt="Plus Icon"/>;
+const minusImg = <img src={minus} alt="Minus Icon"/>;
 
-const Ask = styled.div`
-  width: 100%;
-  ${CommonFlex}
-`; 
+const config = {
+  animate: true,
+  openOnload: 1,
+  expandIcon: plusImg,
+  collapseIcon: minusImg,
+};
 
-const ParagraphQuestion = styled.p`
-
-`;
-
-function Faq() {
+function FaqComponent() {
   return (
-    <FaqContainer>
-        <Ask>
-          <ParagraphQuestion>What is Frontend Mentor, and how will it help me?</ParagraphQuestion>
-          <Img src={minus}/>
-        </Ask>
-    </FaqContainer>
+    <Faq
+      data={Faqs}
+      config={config}
+    />
   );
 }
 
-export default Faq;
+export default FaqComponent;
