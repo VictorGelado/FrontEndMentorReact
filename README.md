@@ -28,7 +28,7 @@ Users should be able to:
 ![Image preview](./screenshot.jpg)
 
 ### Links
-- Live Site URL: [Live site url](https://your-live-site-url.com](https://faq-accordion-victor.netlify.app/))
+- Live Site URL: [Live site url](https://your-live-site-url.com](https://faq-accordion-victor.netlify.app/)
 
 ## My Process
 
